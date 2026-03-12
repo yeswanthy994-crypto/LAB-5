@@ -1,0 +1,21 @@
+/* src/index.css */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+  /* Animated gradient background */
+  background: linear-gradient(-10deg, #74ebd5, #9face6, #9fcee8, #fad0c4);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* full viewport height */
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}

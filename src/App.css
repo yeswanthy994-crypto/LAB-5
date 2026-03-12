@@ -1,0 +1,77 @@
+/* src/App.css */
+.auth-box {
+  width: 90%;
+  max-width: 400px;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.95); /* semi-transparent overlay */
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+  text-align: center;
+  animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.auth-box h1, .auth-box h2 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.auth-box input {
+  display: block;
+  width: 90%;
+  margin: 10px auto;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: border-color 0.3s ease;
+}
+
+.auth-box input:focus {
+  border-color: #007acc;
+  outline: none;
+}
+
+.auth-box button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #007acc;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.auth-box button:hover {
+  background: #005fa3;
+}
+/* Tablets */
+@media (max-width: 768px) {
+  .auth-box {
+    padding: 20px;
+  }
+
+  .auth-box h1 {
+    font-size: 1.8rem;
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+  .auth-box {
+    margin: 10px;
+    padding: 15px;
+  }
+
+  .auth-box h1 {
+    font-size: 1.4rem;
+  }
+
+  .auth-box input {
+    width: 100%;
+  }
+}
